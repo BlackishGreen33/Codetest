@@ -14,13 +14,13 @@ const navigate = useNavigate();
 
 export const signInWithGoogle = async () => {
   await signInWithRedirect(auth, googleProvider).then(() => {
-    navigate("/home/pojects", { replace: true });
+    navigate("/home");
   });
 };
 
 export const signInWithGithub = async () => {
   await signInWithRedirect(auth, githubProvider).then(() => {
-    navigate("/home/pojects", { replace: true });
+    navigate("/home");
   });
 };
 
@@ -32,6 +32,6 @@ export const Menus = [
 
 export const signOutAction = async () => {
   await auth.signOut().then(() => {
-    navigate("/home/pojects", { replace: true });
+    navigate("/home");
   });
 };
