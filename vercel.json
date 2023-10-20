@@ -1,9 +1,8 @@
 {
-  "redirects": [
-    {
-      "source": "/(.*)",
-      "destination": "https://codetest-eta.vercel.app/home",
-      "statusCode": 301
-    }
-  ]
-}
+    "routes": [
+      {
+        "src": "/(.*)",
+        "dest": "/index.html"
+      }
+    ]
+  }
