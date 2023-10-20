@@ -24,5 +24,7 @@ export const Menus = [
 ];
 
 export const signOutAction = async () => {
-  auth.signOut();
+  await auth.signOut().then(() => {
+    window.location.reload();
+  });
 };
