@@ -161,7 +161,7 @@ const NewProject: React.FC<NewProjectProps> = () => {
             <div className="flex items-center justify-center gap-4">
               <motion.button
                 onClick={saveProgram}
-								whileTap={{scale: 0.9}}
+                whileTap={{ scale: 0.9 }}
                 className="px-6 py-4 bg-primaryText cursor-pointer text-base text-primary font-semibold rounded-md"
               >
                 保存
@@ -173,6 +173,7 @@ const NewProject: React.FC<NewProjectProps> = () => {
         {/* coding section */}
         <div>
           {/* horizontal */}
+          {/* @ts-ignore */}
           <SplitPane
             split="horizontal"
             minSize={100}
@@ -180,6 +181,7 @@ const NewProject: React.FC<NewProjectProps> = () => {
             defaultSize={"50%"}
           >
             {/* top coding section */}
+            {/* @ts-ignore */}
             <SplitPane split="vertical" minSize={500}>
               {/* html code */}
               <div className="w-full h-full flex flex-col items-start justify-start">
@@ -208,6 +210,7 @@ const NewProject: React.FC<NewProjectProps> = () => {
                 </div>
               </div>
 
+              {/* @ts-ignore */}
               <SplitPane split="vertical" minSize={500}>
                 {/* css code */}
                 <div className="w-full h-full flex flex-col items-start justify-start">

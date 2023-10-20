@@ -19,6 +19,7 @@ type ViewProjectProps = {};
 const ViewProject: React.FC<ViewProjectProps> = () => {
   const currentUrl = window.location.href;
   const regex = /view\/(\d+)/;
+  // @ts-ignore
   const match = currentUrl.match(regex)[1];
 
   const user = useSelector((state: any) => state.user?.user);
@@ -179,6 +180,7 @@ const ViewProject: React.FC<ViewProjectProps> = () => {
         {/* coding section */}
         <div>
           {/* horizontal */}
+          {/* @ts-ignore */}
           <SplitPane
             split="horizontal"
             minSize={100}
@@ -186,6 +188,7 @@ const ViewProject: React.FC<ViewProjectProps> = () => {
             defaultSize={"50%"}
           >
             {/* top coding section */}
+            {/* @ts-ignore */}
             <SplitPane split="vertical" minSize={500}>
               {/* html code */}
               <div className="w-full h-full flex flex-col items-start justify-start">
@@ -214,6 +217,7 @@ const ViewProject: React.FC<ViewProjectProps> = () => {
                 </div>
               </div>
 
+              {/* @ts-ignore */}
               <SplitPane split="vertical" minSize={500}>
                 {/* css code */}
                 <div className="w-full h-full flex flex-col items-start justify-start">

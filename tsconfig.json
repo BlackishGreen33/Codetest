@@ -20,7 +20,8 @@
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true,
     "types": ["vite/client","node"],
+    "noImplicitAny": false,
   },
-  "include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx", "src/context/reducers/userAuthReducer.js", "src/context/actions/userActions.js", "src/context/reducers/index.js", "src/context/store.js", "src/App.tsx"],
+  "include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx", "src/context/reducers/userAuthReducer.js", "src/context/actions/userActions.js", "src/context/reducers/index.js", "src/context/store.js", "src/App.tsx", "src/main.tsx"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }

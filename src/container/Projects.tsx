@@ -33,6 +33,7 @@ const Projects: React.FC<ProjectsProps> = () => {
       {filtered ? (
         <>
           {filtered &&
+            // @ts-ignore
             filtered.map((project: any, index: Number) => (
               <ProjectCard key={project.id} project={project} index={index} />
             ))}
