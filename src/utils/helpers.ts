@@ -2,7 +2,6 @@ import {
   GithubAuthProvider,
   GoogleAuthProvider,
   signInWithPopup,
-  signInWithRedirect,
 } from "firebase/auth";
 import { auth } from "../config/firebase.config";
 import { v4 as uuidv4 } from "uuid";
@@ -15,9 +14,7 @@ export const signInWithGoogle = async () => {
 };
 
 export const signInWithGithub = async () => {
-  await signInWithRedirect(auth, githubProvider).then(() => {
-    window.location.reload();
-  });
+  signInWithPopup(auth, githubProvider);
 };
 
 export const Menus = [
@@ -27,7 +24,5 @@ export const Menus = [
 ];
 
 export const signOutAction = async () => {
-  await auth.signOut().then(() => {
-    window.location.reload();
-  });
+  auth.signOut();
 };
