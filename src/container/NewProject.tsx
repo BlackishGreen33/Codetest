@@ -58,7 +58,7 @@ const NewProject: React.FC<NewProjectProps> = () => {
     };
 
     await setDoc(doc(db, "Projects", id), _doc)
-      .then((res) => {
+      .then(() => {
         setAlert(true);
       })
       .catch((err) => {
@@ -203,7 +203,7 @@ const NewProject: React.FC<NewProjectProps> = () => {
                     height="600px"
                     extensions={[javascript({ jsx: true })]}
                     theme={"dark"}
-                    onChange={(value, wiewUpdate) => {
+                    onChange={(value) => {
                       setHtml(value);
                     }}
                   />
@@ -232,7 +232,7 @@ const NewProject: React.FC<NewProjectProps> = () => {
                       height="600px"
                       extensions={[javascript({ jsx: true })]}
                       theme={"dark"}
-                      onChange={(value, wiewUpdate) => {
+                      onChange={(value) => {
                         setCss(value);
                       }}
                     />
@@ -261,7 +261,7 @@ const NewProject: React.FC<NewProjectProps> = () => {
                       height="600px"
                       extensions={[javascript({ jsx: true })]}
                       theme={"dark"}
-                      onChange={(value, wiewUpdate) => {
+                      onChange={(value) => {
                         setJs(value);
                       }}
                     />

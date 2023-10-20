@@ -65,7 +65,7 @@ const ViewProject: React.FC<ViewProjectProps> = () => {
     };
 
     await setDoc(doc(db, "Projects", id), _doc)
-      .then((res) => {
+      .then(() => {
         setAlert(true);
       })
       .catch((err) => {
@@ -210,7 +210,7 @@ const ViewProject: React.FC<ViewProjectProps> = () => {
                     height="600px"
                     extensions={[javascript({ jsx: true })]}
                     theme={"dark"}
-                    onChange={(value, wiewUpdate) => {
+                    onChange={(value) => {
                       setHtml(value);
                     }}
                   />
@@ -239,7 +239,7 @@ const ViewProject: React.FC<ViewProjectProps> = () => {
                       height="600px"
                       extensions={[javascript({ jsx: true })]}
                       theme={"dark"}
-                      onChange={(value, wiewUpdate) => {
+                      onChange={(value) => {
                         setCss(value);
                       }}
                     />
@@ -268,7 +268,7 @@ const ViewProject: React.FC<ViewProjectProps> = () => {
                       height="600px"
                       extensions={[javascript({ jsx: true })]}
                       theme={"dark"}
-                      onChange={(value, wiewUpdate) => {
+                      onChange={(value) => {
                         setJs(value);
                       }}
                     />
