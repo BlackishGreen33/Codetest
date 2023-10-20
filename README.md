@@ -1,27 +1,36 @@
-# React + TypeScript + Vite
+<div align="center">
+<h1 align="center">Codetest</h1>
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+代码测试平台
 
-Currently, two official plugins are available:
+</div>
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+# :sparkles: 提交规范
 
-## Expanding the ESLint configuration
+- 🎉 init：项目初始化
+- ✨ feat：新增功能（feature）
+- 🐞 fix：修复bug
+- 📃 docs：文档修改
+- 🌈 style：代码样式调整，不影响代码逻辑
+- ✅ test：测试相关的改动
+- 🔨 refactor：代码重构
+- 🔧 chore：构建过程或辅助工具的变动
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+# :dart: 兼容环境
 
-- Configure the top-level `parserOptions` property like this:
+- 现代浏览器（Chrome >= 64, Edge >= 79, Firefox >= 78, Safari >= 12）
 
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
+# :computer: 本地调试
+
+```bash
+$ git https://github.com/BlackishGreen33/Codetest.git
+$ cd Codetest
+$ pnpm install
+$ pnpm run dev
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+# :pencil: 授权
+
+上述文件皆以 MIT 许可授权
+
+> 详细之授权请参照 [LICENSE](LICENSE) 文件
