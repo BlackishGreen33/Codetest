@@ -3,6 +3,12 @@
 
 一個在線的 HTML/CSS/JS 專案分享平台
 
+![license](https://img.shields.io/github/license/BlackishGreen33/Codetest)
+![language](https://img.shields.io/github/languages/top/BlackishGreen33/Codetest)
+![last](https://img.shields.io/github/last-commit/BlackishGreen33/Codetest)
+
+<a href="https://codetest-fe.vercel.app/" target="_blank">在线体验</a>
+
 </div>
 
 # :sparkles: 提交規範
