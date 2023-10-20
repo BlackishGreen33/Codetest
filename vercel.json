@@ -2,7 +2,7 @@
   "routes": [
     {
       "src": "/.*",
-      "dest": "https://codetest-eta.vercel.app/home/pojects",
+      "dest": "/home",
       "status": 200
     }
   ]
