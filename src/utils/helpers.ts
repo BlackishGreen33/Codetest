@@ -5,19 +5,22 @@ import {
 } from "firebase/auth";
 import { auth } from "../config/firebase.config";
 import { v4 as uuidv4 } from "uuid";
+import { useNavigate } from "react-router-dom";
 
 const googleProvider = new GoogleAuthProvider();
 const githubProvider = new GithubAuthProvider();
 
+const navigate = useNavigate();
+
 export const signInWithGoogle = async () => {
   await signInWithRedirect(auth, googleProvider).then(() => {
-    window.location.reload();
+    navigate("/home/pojects", { replace: true });
   });
 };
 
 export const signInWithGithub = async () => {
   await signInWithRedirect(auth, githubProvider).then(() => {
-    window.location.reload();
+    navigate("/home/pojects", { replace: true });
   });
 };
 
@@ -29,6 +32,6 @@ export const Menus = [
 
 export const signOutAction = async () => {
   await auth.signOut().then(() => {
-    window.location.reload();
+    navigate("/home/pojects", { replace: true });
   });
 };
